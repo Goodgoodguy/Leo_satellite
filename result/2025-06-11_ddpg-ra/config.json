@@ -1,0 +1,47 @@
+{
+    "ac_kwargs":	{
+        "hidden_sizes":	[
+            128,
+            256,
+            128
+        ]
+    },
+    "act_noise":	0.2,
+    "actor_critic":	"DIS_ActorCritic",
+    "batch_size":	256,
+    "env_fn":	"satellite_run",
+    "epochs":	1000,
+    "exp_name":	"ddpg-ra",
+    "gamma":	0.99,
+    "logger":	{
+        "<spinup.utils.logx.EpochLogger object at 0x7f8fcb234fa0>":	{
+            "epoch_dict":	{},
+            "exp_name":	"ddpg-ra",
+            "first_row":	true,
+            "log_current_row":	{},
+            "log_headers":	[],
+            "output_dir":	"/home/yang/Leo_satellite/result/2025-06-11_ddpg-ra",
+            "output_file":	{
+                "<_io.TextIOWrapper name='/home/yang/Leo_satellite/result/2025-06-11_ddpg-ra/progress.txt' mode='w' encoding='UTF-8'>":	{
+                    "mode":	"w"
+                }
+            }
+        }
+    },
+    "logger_kwargs":	{
+        "exp_name":	"ddpg-ra",
+        "output_dir":	"/home/yang/Leo_satellite/result/2025-06-11_ddpg-ra"
+    },
+    "max_ep_len":	50,
+    "num_test_episodes":	10,
+    "pi_lr":	0.001,
+    "polyak":	0.999,
+    "q_lr":	0.0001,
+    "replay_size":	10000,
+    "save_freq":	1,
+    "seed":	0,
+    "start_steps":	1000000000.0,
+    "steps_per_epoch":	50,
+    "update_after":	1000000000.0,
+    "update_every":	1000000000.0
+}
